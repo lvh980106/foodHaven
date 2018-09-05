@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minHeight="250dp"
+    tools:context=".queueSystem">
+
+
+    <Button
+        android:id="@+id/backButton"
+        style="@android:style/Widget.DeviceDefault.Button.Inset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:text="Back"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.945"
+        app:layout_constraintStart_toEndOf="@+id/refreshButton" />
+
+    <ImageView
+        android:id="@+id/fruitMan"
+        android:layout_width="33dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.286"
+        app:layout_constraintStart_toEndOf="@+id/juiceStall"
+        app:layout_constraintTop_toBottomOf="@+id/queueTraffic"
+        app:srcCompat="@drawable/green_man" />
+
+    <Button
+        android:id="@+id/refreshButton"
+        style="@android:style/Widget.DeviceDefault.Button.Inset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:text="refresh"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/queueTraffic"
+        android:layout_width="116dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="48dp"
+        android:text="Queue Traffic"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#9400D3"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/jcuLogo"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/drinkStall"
+        android:layout_width="108dp"
+        android:layout_height="47dp"
+        app:layout_constraintBottom_toTopOf="@+id/refreshButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/drink_stall" />
+
+    <ImageView
+        android:id="@+id/muslimStall"
+        android:layout_width="92dp"
+        android:layout_height="47dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/drinkStall"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/muslim_stall" />
+
+    <ImageView
+        android:id="@+id/westernStall"
+        android:layout_width="93dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/muslimStall"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/western_stall" />
+
+    <ImageView
+        android:id="@+id/indianStall"
+        android:layout_width="104dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/westernStall"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/indian_stall" />
+
+    <ImageView
+        android:id="@+id/thaiStall"
+        android:layout_width="93dp"
+        android:layout_height="57dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/indianStall"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/thai_stall" />
+
+    <ImageView
+        android:id="@+id/banmianStall"
+        android:layout_width="93dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/thaiStall"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ban_mian_stall" />
+
+    <ImageView
+        android:id="@+id/riceStall"
+        android:layout_width="93dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/banmianStall"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/economic_rice_stall" />
+
+    <ImageView
+        android:id="@+id/juiceStall"
+        android:layout_width="97dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/riceStall"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/fruit_juices_stall" />
+
+    <ImageView
+        android:id="@+id/jcuLogo"
+        android:layout_width="128dp"
+        android:layout_height="60dp"
+        app:layout_constraintBottom_toTopOf="@+id/juiceStall"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/jcu_logo"
+        tools:layout_editor_absoluteX="154dp"
+        tools:layout_editor_absoluteY="49dp" />
+
+    <TextView
+        android:id="@+id/onlineOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="48dp"
+        android:text="Online Orders"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#800080"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/queueTraffic"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/fruitNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="20dp"
+        android:text="1"
+        android:textSize="32sp"
+        app:layout_constraintStart_toEndOf="@+id/fruitMan"
+        app:layout_constraintTop_toBottomOf="@+id/onlineOrder" />
+
+    <ImageView
+        android:id="@+id/riceMan"
+        android:layout_width="32dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toEndOf="@+id/riceStall"
+        app:layout_constraintTop_toBottomOf="@+id/fruitMan"
+        app:srcCompat="@drawable/green_man" />
+
+    <ImageView
+        android:id="@+id/banmianMan"
+        android:layout_width="32dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toEndOf="@+id/banmianStall"
+        app:layout_constraintTop_toBottomOf="@+id/riceMan"
+        app:srcCompat="@drawable/green_man" />
+
+    <ImageView
+        android:id="@+id/thaiMan"
+        android:layout_width="32dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toEndOf="@+id/thaiStall"
+        app:layout_constraintTop_toBottomOf="@+id/banmianMan"
+        app:srcCompat="@drawable/green_man" />
+
+    <ImageView
+        android:id="@+id/indianMan"
+        android:layout_width="32dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toEndOf="@+id/indianStall"
+        app:layout_constraintTop_toBottomOf="@+id/thaiMan"
+        app:srcCompat="@drawable/green_man" />
+
+    <ImageView
+        android:id="@+id/westernMan"
+        android:layout_width="32dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toEndOf="@+id/westernStall"
+        app:layout_constraintTop_toBottomOf="@+id/indianMan"
+        app:srcCompat="@drawable/green_man" />
+
+    <ImageView
+        android:id="@+id/muslimMan"
+        android:layout_width="32dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toEndOf="@+id/muslimStall"
+        app:layout_constraintTop_toBottomOf="@+id/westernMan"
+        app:srcCompat="@drawable/green_man" />
+
+    <ImageView
+        android:id="@+id/drinkMan"
+        android:layout_width="32dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toEndOf="@+id/drinkStall"
+        app:layout_constraintTop_toBottomOf="@+id/muslimMan"
+        app:srcCompat="@drawable/green_man" />
+
+    <TextView
+        android:id="@+id/riceNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="17dp"
+        android:text="1"
+        android:textSize="32sp"
+        app:layout_constraintStart_toEndOf="@+id/riceMan"
+        app:layout_constraintTop_toBottomOf="@+id/fruitNumber" />
+
+    <TextView
+        android:id="@+id/banMianNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="17dp"
+        android:text="1"
+        android:textSize="32sp"
+        app:layout_constraintStart_toEndOf="@+id/banmianMan"
+        app:layout_constraintTop_toBottomOf="@+id/riceNumber" />
+
+    <TextView
+        android:id="@+id/thaiNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="17dp"
+        android:text="1"
+        android:textSize="32sp"
+        app:layout_constraintStart_toEndOf="@+id/thaiMan"
+        app:layout_constraintTop_toBottomOf="@+id/banMianNumber" />
+
+    <TextView
+        android:id="@+id/indianNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="17dp"
+        android:text="1"
+        android:textSize="32sp"
+        app:layout_constraintStart_toEndOf="@+id/indianMan"
+        app:layout_constraintTop_toBottomOf="@+id/thaiNumber" />
+
+    <TextView
+        android:id="@+id/westernNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="17dp"
+        android:text="1"
+        android:textSize="32sp"
+        app:layout_constraintStart_toEndOf="@+id/westernMan"
+        app:layout_constraintTop_toBottomOf="@+id/indianNumber" />
+
+    <TextView
+        android:id="@+id/muslimNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="17dp"
+        android:text="1"
+        android:textSize="32sp"
+        app:layout_constraintStart_toEndOf="@+id/muslimMan"
+        app:layout_constraintTop_toBottomOf="@+id/westernNumber" />
+
+    <TextView
+        android:id="@+id/drinkNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="17dp"
+        android:text="1"
+        android:textSize="32sp"
+        app:layout_constraintStart_toEndOf="@+id/muslimMan"
+        app:layout_constraintTop_toBottomOf="@+id/muslimNumber" />
+
+
+
+</android.support.constraint.ConstraintLayout>
